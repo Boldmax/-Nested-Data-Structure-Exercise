@@ -215,3 +215,21 @@
   /*if we call the function */nestedObject.addCountry("Italy","Rome",60000000) /* the output will be as follow:
   Italy: {capital: "Rome", population: "60000000"}
   switzerland: {capital: "Bern", population: 8000000} */
+
+    /* NUMBER (3) Write a function called rotate which takes an array and a number,
+     and moves each element however many spaces the number is to the right. For the 
+     value at the end of the array, rotate should move it back to the beginning.*/
+   
+     function rotate(array, a){
+      var i = 0;
+      while(i < a){
+      array.unshift(array.pop());
+      i++
+      }
+      return array
+      }
+      // call the function
+      rotate([5,6,7,8,9,], 3)     //  [7, 8, 9, 5, 6]
+
+ //   NUMBER (4)
+ 
